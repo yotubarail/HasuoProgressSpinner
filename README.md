@@ -10,5 +10,5 @@
 ## 使い方(how to)
 
 
-## ライセンス(License)
+## ライセンス(license)
 
