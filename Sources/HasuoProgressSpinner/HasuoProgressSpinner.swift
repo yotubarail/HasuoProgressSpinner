@@ -2,16 +2,18 @@ import SwiftUI
 
 public struct HsProgress: View {
     
-    @Binding var isShowType: String
+    var isShowType: String
+    var text: String
 
-    public init(isShowType: Binding<String>) {
-        self._isShowType = isShowType
+    public init(isShowType: String, text: String) {
+        self.isShowType = isShowType
+        self.text = text
     }
     
     public var body: some View {
         switch isShowType {
             case "succeed":
-                EmptyView()
+                SucceedView(text: text)
             default:
                 EmptyView()
         }
