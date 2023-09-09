@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "HasuoProgressSpinner",
+    platforms: [
+            .iOS(.v14),
+            .macOS(.v11),
+            .tvOS(.v14),
+            .watchOS(.v7)
+    ],
     products: [
         .library(
             name: "HasuoProgressSpinner",
@@ -15,9 +21,6 @@ let package = Package(
     targets: [
         .target(
             name: "HasuoProgressSpinner",
-            dependencies: []),
-        .testTarget(
-            name: "HasuoProgressSpinnerTests",
-            dependencies: ["HasuoProgressSpinner"]),
+            dependencies: [])
     ]
 )
