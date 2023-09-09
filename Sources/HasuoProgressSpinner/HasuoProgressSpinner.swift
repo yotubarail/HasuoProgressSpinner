@@ -2,16 +2,16 @@ import SwiftUI
 
 public struct HsProgress: View {
     
-    var isShowType: String
+    var showType: String
     var text: String
 
-    public init(isShowType: String, text: String) {
-        self.isShowType = isShowType
+    public init(showType: String, text: String) {
+        self.showType = showType
         self.text = text
     }
     
     public var body: some View {
-        switch isShowType {
+        switch showType {
             case "succeed":
                 SucceedView(text: text)
             default:
