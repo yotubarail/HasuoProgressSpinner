@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct SucceedView: View {
-    let text: String
+    let text: String?
     
     var body: some View {
-        Text(text)
+        VStack {
+            Image(uiImage: .strokedCheckmark)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50, height: 50)
+                .clipped()
+            Text(text ?? "")
+                .multilineTextAlignment(.center)
+        }
     }
 }
