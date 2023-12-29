@@ -8,7 +8,7 @@ Library of spinners to be displayed during loading.
 1. メニューから`File` > `Add Packages...`を選択
 2. "https://github.com/yotubarail/HasuoProgressSpinner"をサーチバーに入力
 3. `Add Package`ボタンでライブラリ追加
-
+---
 1. Select `File` > `Add Packages...` from the menu.
 2. Enter "https://github.com/yotubarail/HasuoProgressSpinner" in the search bar
 3. Click the `Add Package` button to add a library
